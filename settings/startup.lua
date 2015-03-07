@@ -20,4 +20,6 @@ run_once("urxvtd")
 run_once("unclutter")
 run_once("compton")
 
+run_once("nm-applet")
+
 -- }}}
