@@ -1,0 +1,20 @@
+{
+  "name": "awesome-copycats-settings",
+  "version": "0.1.0",
+  "authors": [
+    "Evan Sosenko <razorx@evansosenko.com>"
+  ],
+  "description": "Custom settings for modular version of Awesome WM Copycats.",
+  "main": "README.md",
+  "keywords": [
+    "awesome",
+    "awesome-copycats"
+  ],
+  "license": "BY-NC-SA",
+  "homepage": "https://github.com/razor-x/awesome-copycats-settings",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "bower_components"
+  ]
+}
