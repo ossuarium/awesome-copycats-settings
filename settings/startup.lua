@@ -16,7 +16,6 @@ end
 
 -- {{{ Autostart applications
 
-run_once("xmodmap ~/.Xmodmap")
 run_once("unclutter")
 run_once("nm-applet")
 
