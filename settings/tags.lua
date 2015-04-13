@@ -17,7 +17,7 @@ layouts = {
 
 
 tags = {
-   names = { 1, 2, 3, 4, 5, 6, 7, 8, 9 },  -- default
+   names = { "alpha", "beta", "delta", "gamma", "sigma" },  -- default
    -- names = { "ƀ", "Ƅ", "Ɗ", "ƈ", "ƙ" }, -- blackburn/dremora
    layout = {
      layouts[2],
