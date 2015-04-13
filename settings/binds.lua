@@ -45,6 +45,8 @@ globalkeys = awful.util.table.join(globalkeys,
 
   -- Dropdown terminal
   awful.key({ modkey,	          }, "z",      function () drop(terminal) end),
+  awful.key({ modkey,	          }, "p",      function () drop(terminal ..
+    " -b -T glances -e glances-b -T glances -e glances") end),
 
   -- Take a screenshot
   -- https://github.com/copycat-killer/dots/blob/master/bin/screenshot
