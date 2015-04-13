@@ -16,7 +16,4 @@ end
 
 -- {{{ Autostart applications
 
-run_once("unclutter")
-run_once("nm-applet")
-
 -- }}}
