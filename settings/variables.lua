@@ -14,6 +14,7 @@ browser2   = "google-chrome-stable"
 gui_editor = "gvim"
 graphics   = "gimp"
 mail       = terminal .. " -e mutt "
+locker     = "slimlock"
 
 -- city code - grab it from yahoo weather: https://weather.yahoo.com/
 city = 123456

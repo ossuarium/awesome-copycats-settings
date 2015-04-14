@@ -96,7 +96,7 @@ globalkeys = awful.util.table.join(globalkeys,
       end),
 
   -- Show Menu
-  awful.key({ modkey }, "w",
+  awful.key({ modkey }, "a",
       function ()
           mymainmenu:show({ keygrabber = true })
       end),
@@ -129,8 +129,9 @@ globalkeys = awful.util.table.join(globalkeys,
   -- User programs
   awful.key({ modkey }, "q", function () awful.util.spawn(browser) end),
   awful.key({ modkey }, "i", function () awful.util.spawn(browser2) end),
-  awful.key({ modkey }, "s", function () awful.util.spawn(gui_editor) end),
+  awful.key({ modkey }, "e", function () awful.util.spawn(gui_editor) end),
   awful.key({ modkey }, "g", function () awful.util.spawn(graphics) end),
+  awful.key({ modkey }, "w", function () awful.util.spawn(locker) end),
 
   -- Prompt
   awful.key({ modkey }, "r", function () mypromptbox[mouse.screen]:run() end),
