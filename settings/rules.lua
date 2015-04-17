@@ -25,7 +25,10 @@ awful.rules.rules = {
           properties = { tag = tags[1][1] } },
 
     { rule = { instance = "plugin-container" },
-          properties = { tag = tags[1][1] } },
+          properties = { floating = true } },
+
+    { rule = { instance = "exe" },
+          properties = { floating = true } },
 
     { rule = { class = "Gimp" },
            properties = { tag = tags[1][4] } },
