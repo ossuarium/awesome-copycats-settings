@@ -1,6 +1,7 @@
 local awful = require("awful")
 local drop  = require("third-party/scratchdrop")
 local lain  = require("lain")
+local apw   = require("apw/widget")
 
 -- {{{ Mouse bindings
 
@@ -149,7 +150,11 @@ globalkeys = awful.util.table.join(globalkeys,
     awful.util.spawn("xbacklight -dec 15") end),
 
   awful.key({ }, "XF86MonBrightnessUp", function ()
-    awful.util.spawn("xbacklight -inc 15") end)
+    awful.util.spawn("xbacklight -inc 15") end),
+
+  awful.key({ }, "XF86AudioRaiseVolume",  apw.Up),
+  awful.key({ }, "XF86AudioLowerVolume",  apw.Down),
+  awful.key({ }, "XF86AudioMute",         apw.ToggleMute)
 )
 
 -- Bind all key numbers to tags.
