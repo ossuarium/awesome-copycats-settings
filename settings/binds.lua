@@ -144,6 +144,15 @@ globalkeys = awful.util.table.join(globalkeys,
             end)
 )
 
+-- Media keys.
+globalkeys = awful.util.table.join(globalkeys,
+  awful.key({ }, "XF86MonBrightnessDown", function ()
+    awful.util.spawn("xbacklight -dec 15") end),
+
+  awful.key({ }, "XF86MonBrightnessUp", function ()
+    awful.util.spawn("xbacklight -inc 15") end)
+)
+
 -- Bind all key numbers to tags.
 -- Be careful: we use keycodes to make it works on any keyboard layout.
 -- This should map on the top row of your keyboard, usually 1 to 9.
