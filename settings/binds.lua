@@ -45,11 +45,11 @@ globalkeys = awful.util.table.join(globalkeys,
   awful.key({ modkey, "Shift"   }, "q",      awesome.quit),
 
   -- Dropdown terminal
-  awful.key({ modkey,	          }, "z",      function () drop(tmux .. "default",
+  awful.key({ modkey,	          }, "p",      function () drop(tmux .. "default",
     "top", "center", 0.5, 0.5, true) end),
-  awful.key({ modkey,	          }, "p",      function () drop(tmux .. "glances",
+  awful.key({ modkey,	          }, "g",      function () drop(tmux .. "glances",
     "bottm", "left", 0.5, 0.5, true) end),
-  awful.key({ modkey,	          }, "g",      function () drop(tmux .. "hangups",
+  awful.key({ modkey,	          }, "d",      function () drop(tmux .. "hangups",
     "bottom", "right", 0.5, 0.5, true) end),
 
   -- Take a screenshot
