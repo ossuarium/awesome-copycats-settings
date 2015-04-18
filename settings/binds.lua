@@ -42,7 +42,6 @@ globalkeys = awful.util.table.join(globalkeys,
   -- Standard program
   awful.key({ modkey,           }, "Return", function () awful.util.spawn(terminal) end),
   awful.key({ modkey, "Control" }, "r",      awesome.restart),
-  awful.key({ modkey, "Shift"   }, "q",      awesome.quit),
 
   -- Dropdown terminal
   awful.key({ modkey,	          }, "p",      function () drop(tmux .. "default",
