@@ -7,6 +7,7 @@ os.setlocale(os.getenv("LANG"))
 modkey     = "Mod4"
 altkey     = "Mod1"
 terminal   = "terminator" or "xterm"
+tmux       = "urxvt -e tmux attach -t "
 editor     = os.getenv("EDITOR") or "nano" or "vi"
 editor_cmd = terminal .. " -e " .. editor
 

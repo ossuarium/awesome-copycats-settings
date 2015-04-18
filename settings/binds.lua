@@ -45,9 +45,12 @@ globalkeys = awful.util.table.join(globalkeys,
   awful.key({ modkey, "Shift"   }, "q",      awesome.quit),
 
   -- Dropdown terminal
-  awful.key({ modkey,	          }, "z",      function () drop(terminal) end),
-  awful.key({ modkey,	          }, "p",      function () drop(terminal ..
-    " -b -T glances -e glances-b -T glances -e glances") end),
+  awful.key({ modkey,	          }, "z",      function () drop(tmux .. "default",
+    "top", "center", 0.5, 0.5, true) end),
+  awful.key({ modkey,	          }, "p",      function () drop(tmux .. "glances",
+    "bottm", "left", 0.5, 0.5, true) end),
+  awful.key({ modkey,	          }, "g",      function () drop(tmux .. "hangups",
+    "bottom", "right", 0.5, 0.5, true) end),
 
   -- Take a screenshot
   awful.key({ }, "Print", function() os.execute(screenshot) end),
@@ -130,7 +133,6 @@ globalkeys = awful.util.table.join(globalkeys,
   awful.key({ modkey }, "q", function () awful.util.spawn(browser) end),
   awful.key({ modkey }, "i", function () awful.util.spawn(browser2) end),
   awful.key({ modkey }, "e", function () awful.util.spawn(gui_editor) end),
-  awful.key({ modkey }, "g", function () awful.util.spawn(graphics) end),
   awful.key({ modkey }, "w", function () awful.util.spawn(locker) end),
 
   -- Prompt
