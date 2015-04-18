@@ -16,6 +16,4 @@ end
 
 -- {{{ Autostart applications
 
-run_once("sleep 3 && systemctl --user restart app@qhangups")
-
 -- }}}
