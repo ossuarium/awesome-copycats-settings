@@ -1,3 +1,5 @@
+local widgets = require("vicious.widgets")
+
 -- localization
 os.setlocale(os.getenv("LANG"))
 
@@ -9,6 +11,7 @@ editor     = os.getenv("EDITOR") or "nano" or "vi"
 editor_cmd = terminal .. " -e " .. editor
 
 -- user defined
+hostname   = (widgets.os()[4])
 browser    = "firefox"
 browser2   = "google-chrome-stable"
 gui_editor = "gvim"
