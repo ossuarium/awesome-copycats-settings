@@ -22,3 +22,7 @@ screenshot = "maim ~/drive/screenshots/$(date +%F-%T).png"
 
 -- city code - grab it from yahoo weather: https://weather.yahoo.com/
 city = 123456
+
+if hostname == "Gungnir" then
+  browser2 = "google-chrome-unstable --force-device-scale-factor=2"
+end
