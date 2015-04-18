@@ -146,12 +146,6 @@ globalkeys = awful.util.table.join(globalkeys,
 
 -- Media keys.
 globalkeys = awful.util.table.join(globalkeys,
-  awful.key({ }, "XF86MonBrightnessDown", function ()
-    awful.util.spawn("xbacklight -dec 15") end),
-
-  awful.key({ }, "XF86MonBrightnessUp", function ()
-    awful.util.spawn("xbacklight -inc 15") end),
-
   awful.key({ }, "XF86AudioRaiseVolume",  apw.Up),
   awful.key({ }, "XF86AudioLowerVolume",  apw.Down),
   awful.key({ }, "XF86AudioMute",         apw.ToggleMute)
