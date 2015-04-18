@@ -18,7 +18,6 @@ browser2   = "google-chrome-stable"
 gui_editor = "gvim"
 graphics   = "gimp"
 mail       = terminal .. " -e mutt "
-locker     = "slimlock"
 screenshot = "maim ~/drive/screenshots/$(date +%F-%T).png"
 
 -- city code - grab it from yahoo weather: https://weather.yahoo.com/

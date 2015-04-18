@@ -133,7 +133,6 @@ globalkeys = awful.util.table.join(globalkeys,
   awful.key({ modkey }, "q", function () awful.util.spawn(browser) end),
   awful.key({ modkey }, "i", function () awful.util.spawn(browser2) end),
   awful.key({ modkey }, "e", function () awful.util.spawn(gui_editor) end),
-  awful.key({ modkey }, "w", function () awful.util.spawn(locker) end),
 
   -- Prompt
   awful.key({ modkey }, "r", function () mypromptbox[mouse.screen]:run() end),
