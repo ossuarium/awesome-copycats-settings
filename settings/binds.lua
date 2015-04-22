@@ -50,6 +50,8 @@ globalkeys = awful.util.table.join(globalkeys,
     "bottm", "left", 0.5, 0.5, true) end),
   awful.key({ modkey,	          }, "d",      function () drop(tmux .. "hangups",
     "bottom", "right", 0.5, 0.5, true) end),
+  awful.key({ modkey,	          }, "s",      function () drop(browser2 .. " --app='https://play.google.com/music/listen'",
+    "top", "center", 1, 1, true) end),
 
   -- Take a screenshot
   awful.key({ }, "Print", function() os.execute(screenshot) end),
