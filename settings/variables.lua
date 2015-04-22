@@ -18,7 +18,7 @@ browser2   = "google-chrome-stable"
 gui_editor = "gvim"
 graphics   = "gimp"
 mail       = terminal .. " -e mutt "
-screenshot = "maim ~/drive/screenshots/$(date +%F-%T).png"
+screenshot = "maim ~/drive/screenshots/$(hostname | tr '[:upper:]' '[:lower:]')/$(date +%F-%T).png"
 
 -- city code - grab it from yahoo weather: https://weather.yahoo.com/
 city = 123456
