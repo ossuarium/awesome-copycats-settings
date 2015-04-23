@@ -16,4 +16,6 @@ end
 
 -- {{{ Autostart applications
 
+awful.util.spawn_with_shell("sleep 1 && systemctl --user restart window-manager.target")
+
 -- }}}
