@@ -44,12 +44,16 @@ globalkeys = awful.util.table.join(globalkeys,
   awful.key({ modkey, "Control" }, "r",      awesome.restart),
 
   -- Dropdown terminal
-  awful.key({ modkey,	          }, "p",      function () drop(tmux .. "default",
-    "top", "center", 0.5, 0.5, true) end),
+  awful.key({ modkey,	          }, "p",      function () drop("urxvt",
+    "top", "center", 0.75, 0.5, true) end),
+  awful.key({ modkey,	          }, "q",      function () drop(tmux .. "ranger",
+    "bottm", "left", 1, 0.75, true) end),
   awful.key({ modkey,	          }, "g",      function () drop(tmux .. "glances",
-    "bottm", "left", 0.5, 0.5, true) end),
+    "bottm", "left", 0.75, 0.75, true) end),
   awful.key({ modkey,	          }, "d",      function () drop(tmux .. "hangups",
     "bottom", "right", 0.5, 0.5, true) end),
+  awful.key({ modkey,	          }, "i",      function () drop(browser2 .. " --app='https://inbox.google.com'",
+    "top", "center", 1, 1, true) end),
   awful.key({ modkey,	          }, "s",      function () drop(browser2 .. " --app='https://play.google.com/music/listen'",
     "top", "center", 1, 1, true) end),
 
@@ -131,9 +135,12 @@ globalkeys = awful.util.table.join(globalkeys,
   awful.key({ modkey }, "c", function () os.execute("xsel -p -o | xsel -i -b") end),
 
   -- User programs
-  awful.key({ modkey }, "q", function () awful.util.spawn(browser) end),
-  awful.key({ modkey }, "i", function () awful.util.spawn(browser2) end),
-  awful.key({ modkey }, "e", function () awful.util.spawn(gui_editor) end),
+  awful.key({ modkey }, "[", function () awful.util.spawn(browser) end),
+  awful.key({ modkey }, "]", function () awful.util.spawn(browser2) end),
+  awful.key({ modkey }, ";", function () awful.util.spawn(gui_editor) end),
+  awful.key({ modkey }, "'", function () awful.util.spawn(gui_files) end),
+  awful.key({ modkey }, ",", function () awful.util.spawn(viewer) end),
+  awful.key({ modkey }, ".", function () awful.util.spawn(player) end),
 
   -- Prompt
   awful.key({ modkey }, "r", function () mypromptbox[mouse.screen]:run() end),
