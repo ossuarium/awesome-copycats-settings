@@ -4,10 +4,10 @@
 
 Custom settings for modular version of [Awesome WM Copycats].
 
-Intended to be used as alternative settings for [razor-x/awesome-copycats#razor-x].
+Intended to be used as alternative settings for [rxrc/awesome-copycats#razor-x].
 
 [Awesome WM Copycats]: https://github.com/copycat-killer/awesome-copycats
-[razor-x/awesome-copycats#razor-x]: https://github.com/razor-x/awesome-copycats/tree/razor-x
+[rxrc/awesome-copycats#razor-x]: https://github.com/rxrc/awesome-copycats/tree/razor-x
 
 ## License
 
