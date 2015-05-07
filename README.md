@@ -1,6 +1,6 @@
 # Awesome Copycats Settings
 
-[![Creative Commons License](https://img.shields.io/badge/license-BY%20NC%20SA-red.svg)](./LICENSE.txt)
+[![Creative Commons License](https://img.shields.io/badge/license-BY%20NC%20SA-blue.svg)](./LICENSE.txt)
 
 Custom settings for modular version of [Awesome WM Copycats].
 
