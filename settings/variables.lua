@@ -27,5 +27,5 @@ screenshot = "maim ~/drive/screenshots/$(hostname | tr '[:upper:]' '[:lower:]')/
 city = 123456
 
 if hostname == "Gungnir" then
-  browser2 = "google-chrome-unstable --force-device-scale-factor=2"
+  browser2 = "google-chrome --force-device-scale-factor=2"
 end
