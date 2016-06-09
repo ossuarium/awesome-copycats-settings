@@ -8,7 +8,7 @@ modkey     = "Mod4"
 altkey     = "Mod1"
 terminal   = "terminator" or "xterm"
 tmux       = "urxvt -e tmux attach -t "
-editor     = os.getenv("EDITOR") or "nano" or "vi"
+editor     = os.getenv("EDITOR") or "vim" or "nano" or "vi"
 editor_cmd = terminal .. " -e " .. editor
 
 -- user defined
