@@ -46,9 +46,9 @@ globalkeys = awful.util.table.join(globalkeys,
   awful.key({ modkey, "Control" }, "r",      awesome.restart),
 
   -- Dropdown terminal
-  awful.key({ modkey,	          }, "p",      function () drop("urxvt",
+  awful.key({ modkey,	          }, "p",      function () drop(terminal,
     "top", "center", 0.75, 0.5, true) end),
-  awful.key({ modkey,	          }, "q",      function () drop("urxvt -depth 0",
+  awful.key({ modkey,	          }, "q",      function () drop(terminal,
     "bottm", "left", 1, 0.75, true) end),
   awful.key({ modkey,	          }, "g",      function () drop(tmux .. "glances",
     "bottm", "left", 0.75, 0.75, true) end),
