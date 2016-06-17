@@ -15,7 +15,7 @@ editor_cmd = terminal .. " -e " .. editor
 hostname   = (widgets.os()[4])
 browser    = "firefox"
 browser2   = "google-chrome-stable"
-gui_editor = "gvim"
+gui_editor = "zsh -c 'NVIM_TUI_ENABLE_TRUE_COLOR=1 nvim-qt'"
 graphics   = "gimp"
 gui_files  = "sunflower"
 player     = "vlc"
